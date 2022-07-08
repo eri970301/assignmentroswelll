@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import Tasks from './components/Tasks';
+import Time from './components/Time';
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Time />
+      <h6 className="container my-5">Previous Tasks</h6>
+      <Tasks />
     </div>
   );
 }
